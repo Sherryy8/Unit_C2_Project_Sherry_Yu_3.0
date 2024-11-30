@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 8</title>
+    <style>
+      table, th, td {
+        border:1px solid black;
+      }
+      th,td { text-align:center;
+            width:100px;
+            height:50px;
+            margin:auto}
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="Sherry" content="Lesson 8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+      <h1>Lesson 8: Entities</h1>
+      <h3>Charater Encoding Schemes:</h3>
+      <p>
+<ul>
+  <li><b>ASCII (American Standard Code for Information Interchange)</b> - The first and most widely used character encoding system before Unicode
+</li>
+  <li><b>EBCDIC (Extended Binary Coded Decimal Interchange Code)</b>- Used by IBM mainframes computers until IBM converted to ASCII in the 1980s
+</li>
+  <li><b>ANSI (American National Standards Institute) or Windows-1252</b>- An extended version of ASCII developed by ANSI and used in Windows until Unicode
+</li>
+  <li><b>ISO-8859</b>- Developed by the International organization for Standardization, it was a variety of formats for different languages that existed before Unicode
+</li>
+</ul>
+
+<h3>Uilizing Unicode</h3> 
+      <p>Unicode has several character sets. The most popular for web browsers is Unicode Text Format 8-bit, or <b>UTF-8</b>
+      To force browser compatibility for your web page you use the following code in the head section of your page:
+           &lt;meta charset= “utf-8”&gt;
+      38(&amp;), 60(&lt;), 62(&gt;)'
+</p>
+      <h3>HTML Entities</h3>
+      <p>Several characters are considered reserved for use by HTML. Other characters are difficult to reproduce on the keyboard or are things like emojis that can be produced by the keyboard without a special app. To display these characters as text or emojis, you can write the following code:
+        <ul>
+       <li> (nickname method): &+nickname+;</li>
+        Example: &lt; becomes &amp;lt;
+        <li>(number method): & + # + Unicode number +; </li>
+        Example: &lt; becomes &amp;#60;
+        </ul>
+    
+      <h3>Essentiall Entities</h3>
+      <table>
+        <tr>
+          <th>Entity</th>
+          <th>Nickname</th>
+          <th>Number</th>
+        </tr>
+        <tr>
+          <td>&lt;</td>
+          <td>&amp;lt;</td>
+          <td>&amp;#60;</td>
+        </tr>
+        <tr>
+          <td>&gt;</td>
+          <td>&amp;gt;</td>
+          <td>&amp;#62;</td>
+        </tr>
+        <tr>
+          <td>&amp;</td>
+          <td>&amp;amp;</td>
+          <td>&amp;#38;</td>
+        </tr>
+        <tr>
+          <td>Non-Breaking Space</td>
+          <td>&amp;nbsp</td>
+          <td>&amp;#160;</td>
+        </tr>
+      </table>
+          
+    
+    <table>
+        
+        <tr> 
+          <td>
+            <a href="../Even_Pages/page4.html"> Lesson 5,6&7</a>
+          </td>
+          <td rowspan="2"> <a href="../index.html">Home Page </a>
+      </td>  
+          <td>
+            <a href="../Even_Pages/page6.html">Lesson 9 </a>
+          </td>
+        </tr>  
+    </table>
+  </body>
+</html>

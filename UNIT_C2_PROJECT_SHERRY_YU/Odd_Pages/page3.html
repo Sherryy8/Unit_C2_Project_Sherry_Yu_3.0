@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 3 & 4</title>
+    <style>
+      table, th, td {
+        border:1px solid black;
+      }
+      th,td { text-align:center;
+            width:100px;
+            height:50px;
+            margin:auto}
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="Sherry Yu" content="Lesson 3 and 4" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 3: Comments and Attributes</h1>
+      <h3>What are comments?</h3>
+      <p>
+        Comments are text hidden within an HTML document. In order to create an HTML comment, you must use the characters “&lt;!--&gt;” before the comment text and “--&gt;” after it
+Comments are not visible on the actual page, only in the code. They are used to tell other programers things about the code.
+<p>
+  &lt;!-- this is a single line comment: --&gt;
+  &lt;!-- this is a 
+         Multiple line comment --&gt;
+  &lt;!-- You can disable elements &lt;h1&gt;Hello World&lt;/h1&gt; by enclosing them in a comme
+
+  <h3>What are attributes?</h3>
+  <p> <strong>Attributes</strong> are codes that appear within a tag that modify it in some way. The general syntax for an attribute is:
+    &lt;tagName attributeName=”value”&gt; content&lt;/tagName&gt;
+    <ul>
+      EX.
+      <li> &lt;ing src=”happyface”.jpg&gt;
+      <li>&lt;p style=”color:red”&gt;   This paragraph will have red text&lt;/p&gt;</li>
+    </ul>
+<h3>What are links?</h3>
+      <p>
+        Links use  the anchor or &lt;a> element to make a hyperlink to another page or to another location on the same page. It is an inline element. To locate the link, you need the href attribute
+<ul>
+        <li>The general syntax for a link is
+        &lt;a href= “partToFile”>LinkText&lt;/a&gt;</li>
+
+        <li>>Absolute or external links:
+        &lt;a href=”https://google.com”>Google&lt;/a&gt;</li>
+
+        <li>Relative or internal link:
+      &lt;a href= “/index.html”>HomePage&lt;/a&gt;</li>
+</ul>
+      <strong>Download:</strong> lets the user download a file
+      &lt;a download=”fileName”&gt;...
+      <strong>Target:</strong> specifies a specific piece within the page, the link opens
+      Some targets:
+        <ul>
+      <li>blank opens in a new window/tab</li>
+      <li>top opens at the top of the page</li>
+      <li>self opens within the same iframe</li>
+      <li>parent opens within the parent of the current frame
+      &lt;a href=”URL” target=”_blank”&gt;...</li>
+      </ul>
+<ins>Example</ins>
+      &lt;a href=”https://www.youtube.com/watch?v=P2CzCFpz83Y”>Oompa Loompa Music Video&lt;/a&gt;
+     <a href="https://www.youtube.com/watch?v=P2CzCFpz83Y" target="_blank">Oompa Loompa Music Video</a>
+       
+<h3>Embedding Images:</h3>
+        <p>
+          Images are embedded on a web page using the <b>&lt;img&lt;</b> element. It is an empty element (no trailing tag) and works inline. To locate the image you must  use  the <b>src</b> attribute. You must also use the <b>alt</b> attribute to describe the image for screen readers or if the image will not load.
+          <ul>
+            <li>Local image:
+              &lt;img src=”happyface.jpg”alt=”Smiley Face”&gt;</li>
+            <li> Remote image:
+              &lt;img src= “https://ex.com/hf.jpg”alt= “Smiley Face”&gt;</li>
+          </ul>
+<ins>How to Size Images:</ins>
+        You can control the size of images using the <b>width</b> or <b>height</b> attributes, or both. The actuarial dimensions are specified in pixels.If you only specify the height or width, the image will scale proportionally. If you specify both, the image will fix itself to the dimensions you chose. 
+        <br>
+      <br>
+        &lt;img src=”file”width=”200”&gt;
+         (The style attribute can also be used)
+
+<ins>Example</ins>
+      &lt;img src=”Ommpa_Loompa.png” alt=”Oompa Loompa”&gt;
+      <br>
+      <img src="../Pictures/Oompa_Loompa.png" alt="Oompa Loompa" style="width:300px">
+
+        </p>
+
+      
+<h1>Lesson 4: Headings and Paragraphs</h1>
+      <h3>Headings:</h3>
+      <p>
+        <ul>
+          <li>Headings are used to create an outline: structure of a web page</li>
+        <li>There are 6 headings types: &lt;h1&gt; through &lt;h6&gt;</li>
+        <li>Aside from the size of the text headings allow assistive devices like screen readers</li>
+        All headings are block level elements
+          &lt;h1&gt; The top-level heading&lt;/h1&gt;<br>
+          &lt;h2&gt;second level&lt;/h2&gt;<br>
+          &lt;h3&gt;third level&lt;/h3&gt;<br>
+          &lt;h4&gt;fourth level&lt;/h4&gt;<br>
+</ul>
+      </p>
+        
+      <h3>Paragraphs:</h3>
+      <p>
+        Paragraph &lt;p&gt; is the workhouse tag of web design. Most blocks of text use a paragraph for their formatting.Paragraphs are block-level elements, creating space above and below them on the page.If you want to create a line break, use  the &lt;br&gt; tag. &lt;P&gt; most text in the web pages are formatted in paragraphs &lt;br&gt; is an inline tag. </p>
+        
+      <h3>Horizontal Rule and Preformatted Text</h3>
+      <p>
+        <ul>
+         <li>If you want to create a line between blocks of text, use  the &lt;hr&gt; element. &lt;hr&gt; is an empty tag</li>
+          <li>If you want to preserve multiple spaces or line breaks for text like in poems, you can use the preformatted text &lt;pre&gt; tag. &lt;pre&gt; is a block-level element
+</li>
+         </ul>
+      &lt;p&gt;poem&lt;/p&gt;
+      &lt;hr&gt;&lt;!-- creates a line- - &gt;
+      &lt;pre&gt; this text in this tag 
+            Will display 
+          Exactly as
+               You see it
+      &lt;/pre&gt;
+    </p>
+      <h3>Lorem Ipsum Text</h3>
+      <p>
+        <b>Lorem Ipsum</b> text was created long before the use of computers so that book designers could format their products before the writers delivered the content. Web designers use it now to mock up pages. (used for filler text=mock up)(generator on the web can be used  to get the lorem ipsum text)
+      </p>
+    
+    </main>
+    <table>
+        </tr>
+        <tr> 
+          <td>
+            <a href="../Even_Pages/page2.html"> Lesson 1&2</a>
+          </td>
+          <td rowspan="2"> <a href="../index.html">Home Page </a>
+      </td>  
+          <td>
+            <a href="../Even_Pages/page4.html">Lesson 5,6&7 </a>
+          </td>
+        </tr>  
+  </body>
+</html>

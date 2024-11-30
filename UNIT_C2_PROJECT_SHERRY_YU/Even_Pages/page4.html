@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 5, 6 & 7</title>
+    <style>
+      table, th, td {
+        border:1px solid black;
+      }
+      th,td { text-align:center;
+            width:100px;
+            height:50px;
+            margin:auto}
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="Sherry Yu" content="Lesson 5 6 and 7" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 5: Tables</h1>
+      <h3>What are Tables?</h3>
+      <p>
+        <b>Tables</b> allow web developers to arrange data into a grid like structure. Aside  from tables with grid border, you can also create tables without border, and position content without it looking like a grid. 
+<ul>
+  The essential elements for tables are:
+  <li><b>&lt;Table&gt;</b> creates the table</li>
+  <li><b>&lt;tr&gt;</b> creates a row</li>
+  <li><b>&lt;th&gt;</b> creates a heading cell</li>
+  <li><b>&lt;td&gt;</b> creates a data cell</li>
+</ul>
+  
+<h3>Table Borders</h3> 
+      <p>In HTML 5 we use CSS to create borders. If you wants a table with borders, add the following code to the CSS section of your web page on CodePen:
+      Table, th, td {border:1px solid black;}</p>
+      <h3>Table and Cell Size</h3>
+      <p>By default, a table will size itself to fit the contents of the cell within it. But you can force a table (or the cells within it) to have specific sizes. You can specify pixels (px) or percentages of the width or height of the page. If you want to control the size, write the following into the styling section of CodePen:
+    <br>  Table{width:100%;height:500px}
+    <br> th,td{width:100px;height:50px;}
+</p>
+      <h3>Colspan and Rowspan</h3>
+      <p>Sometimes you want a cell to break access to more than one row or column (or both). In this case, you use  the  rowspan or colspan attribute.
+      ( the number tells how many of either it expands to)
+      
+     <br>  &lt;th colspan=”2” &gt;
+     <br>  &lt;td rowspan=”2” &gt;
+      </p>
+        <h3>EXAMPLE:</h3>
+      &lt;!DOCTYPE html&gt;<br>
+      &lt;html&gt;<br>
+      &lt;head&gt;<br>
+      &lt;title&gt;Title of the web page &lt;/Title &gt;<br>
+      &lt;/head&gt;<br>
+      &lt;body&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;<br>
+<h1>Lesson 6: Iframes</h1>
+      <h3>What are Iframes?</h3>
+      <p>
+        <b>Iframes</b> allow an HTML document to display the contents of one or more other HTML documents. We use the &lt;iframe&gt; element to accomplish this
+      </p>
+
+      <h3>HTML iframe Syntaz:</h3>
+      <p>
+        &lt;iframe src=”url” title=”description” width=”” or height=””&gt;&lt;/iframe&gt;
+        <br>
+      The src attribute is used to determine the path to the html document or web page that will provide the contents of the iframeIframes are inline tags; if the width of an iframe is less than the width of the page, other content may appear to the right or left of itThe title attribute is used to provide screen readers  (an in case the source page is inaccessible) a description of the page that should be displayed in the iframe
+</p>
+
+      <h3>Height and Width</h3>
+      <p>
+         &lt;iframe src=”url” title=”description” width=”400%” height=”300px”&gt; &lt;/iframe&gt;
+        <br>
+        Although not necessary, you can use height and/or width attributes to control the size of the iframe window. You may specify either in terms of pixels (absolute height.width? Or percentages (fractions of the current web page window)
+    </p>
+      <h3>EXAMPLE:</h3>
+     <p> <iframe src="https://paper-io.com/" title="Paper.io" width="400" height="300"></iframe> </p>
+      <h1>Lesson 7: Head Elements</h1>
+      <h3>What is the "Head?"</h3>
+      <p>
+        The head is where the page’s metadata is found, along with everything else that is meant not to appear on the visible part of the page. 
+      </p>
+      <h3>What Should Go inside the Head?</h3>
+      <p>
+        <ul> 
+          <li><b>Title:</b> the title is what shows up at the top of the web page window or tab</li>
+          <li><b>Metadata:</b>  data that is invisible to the viewer but is visible to the web crawlers and this important when the page appears in search results
+</li>
+          <li><b>Styles:</b> instructions to the web browser on how the web page should look 
+</li>
+          <li><b>Scripts:</b> JavaScript code that must run before the body of the web page loads. </li>
+          <li><b>Links:</b> important files that are linked to the page, including external CSS and JavaScript files.  
+</li>
+        </ul>
+      
+   
+    </main>
+    <table>
+        <tr> 
+          <td>
+            <a href="../Odd_Pages/page3.html"> Lesson 3&4</a>
+          </td>
+          <td rowspan="2"> <a href="../index.html">Home Page </a>
+      </td>  
+          <td>
+            <a href="../Odd_Pages/page5.html">Lesson 8 </a>
+          </td>
+        </tr>  
+    </table>
+  </body>
+</html>

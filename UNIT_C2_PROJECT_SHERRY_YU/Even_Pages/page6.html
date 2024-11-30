@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 9&10</title>
+    <style>
+      table, th, td {
+        border:1px solid black;
+      }
+      th,td { text-align:center;
+            width:100px;
+            height:50px;
+            margin:auto}
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="Sherry Yu" content="Lessom 9 and 10" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 9: File Paths</h1>
+      <h3>What is a file path?</h3>
+      <p>A <b>File Path</b> is the route you dictate to the the computer in order to find a file.
+        <br>Ex.
+        <pre>
+            C:\
+              Users
+               AI
+                Documents
+                  project.docx
+        </pre>
+The <b>absolute path</b> of the project.docx file is  C:\Users\AI\Documents/prpject.docx
+      (the absolute path is finding it within the entire system’s constellation of files)
+      <br>
+      If you were working in the AI folder, you could find project.docx’s <b>relative path</b> by telling the computer: Documents\project.docx
+      (relative path is finding a file in relation to another part of the system)
+
+  <h3>When to use absolute and relative paths:</h3>
+      <p>
+      It is best to use absolute paths when referring to files that exist outside of your current computer.
+      <br>
+      It is best to use relative paths when you are referring to files that are on your current computer or server. This way, if the folder that contains the files is moved, the links between files do not break. Users that access the file remotely also will have little problem linking the files.
+      </p>
+      <h3>How do File Paths Work?</h3>
+      <p>
+        <ul>
+        <li>Relative path starts at the location of the file we are linking from to another file- it is always relative from linking file’s location
+</li>
+        <li>In order to go one level up you would write ../
+</li>
+        <li>In order to go two levels up  from current folder you would write ../../
+</li>
+        <li>./ means current folder (used to specify that relative file path and file you want to link to is already is current folder)
+</li>
+        <li>./child/ means to link a file that is located in the child folder of the current folder
+</li>
+        <li>Absolute file path means it only starts in the root file and contains all folders within until it reaches the linked file
+</li>
+        <li>Don't use the absolute file path which starts from your computer’s root folder
+</li>
+<pre>   - If you want to link a static file- download it and specify the relative file path</pre>
+
+        <li>You can use the full url link, but make sure it is accessible</li>
+        </ul>
+      
+<h1>Lesson 10:File Paths (continued)</h1>
+      <p>If  you want to go to a directory on the same level as the current directory, then ./ is  not needed
+      Once you get to the  same level, you simply go across to the desired folder  directory and down to the desired file
+</p>
+
+    </main>
+    <table>
+
+        <tr> 
+          <td>
+            <a href="../Odd_Pages/page5.html"> Lesson 8</a>
+          </td>
+          <td rowspan="2"> <a href="../index.html">Home Page </a>
+      </td>  
+          <td>
+            <a href="../Odd_Pages/page7.html">Lesson 11 </a>
+          </td>
+        </tr>  
+    </table>
+  </body>
+</html>
